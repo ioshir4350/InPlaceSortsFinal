@@ -87,12 +87,14 @@ public class Runner {
         time = System.nanoTime() - time;
         System.out.println("Time Taken for InsertionSort: " + time);
 
+        long time2 = System.nanoTime();
         InPlaceSorts.bubbleSort(testArr1);
-        time = System.nanoTime() - time;
-        System.out.println("Time Taken for BubbleSort: " + time);
+        time2 = System.nanoTime() - time2;
+        System.out.println("Time Taken for BubbleSort: " + time2);
 
+        long time3 = System.nanoTime();
         InPlaceSorts.SelectionSort(testArr2);
-        time = System.nanoTime() - time;
-        System.out.println("Time Taken for SelectionSort: " + time);
+        time3 = System.nanoTime() - time3;
+        System.out.println("Time Taken for SelectionSort: " + time3);
     }
 }
